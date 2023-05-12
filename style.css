@@ -1,0 +1,216 @@
+/* 6f6af8 */
+/* 0f0f3e */
+:root {
+    --color-primary:#fff;
+    --color-primary-variant: #fff;
+    --color-red:#da0f3f;
+    --color-green: #00c476;
+    --color-gray-900: #1e1e66;
+    --color-gray-700: #2d2b7c;
+    /* --color-gray-300: rgba(242, 242, 254, 0.3); */
+    /* --color-gray-200: rgba(242, 242, 254, 0.7); */
+    --color-white: #f2f2fe;
+    --color-bg:#fff;
+
+    --transition: all 300ms ease;
+
+    --container-width-lg:74%;
+    --container-width-md:88%;
+    --form-width: 40%;
+
+    --card-border-radius-1: 0.3rem 0;
+    --card-border-radius-2: 0.5rem 0;
+    --card-border-radius-3: 0.8rem 0;
+    --card-border-radius-4: 2rem 0;
+    --card-border-radius-5: 5rem 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    appearance: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    /* color: var(--color-gray-200); */
+    
+    overflow-x: hidden;
+    background-color: var(--color-bg);
+    font-size: 0.9rem;
+}
+.post_title a {
+    color: #000;
+}
+.container {
+    width: var(--container-width-lg);
+    max-width: 1800px;
+    margin-inline: auto;
+}
+section {
+    margin-top: 3rem;
+    width: 100vw;
+}
+h1,h2,h3,h4,h5 {
+    /* color: var(--color-white); */
+    color: #000;
+    margin: 1rem 0;
+}
+h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+h2 {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+h3 {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+h4 {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+a {
+    color: var(--color-white);
+    transition: var(--transition);
+}
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+/* .post {
+    border: 1rem solid var(--color-gray-900);
+    padding: 5px;
+} */
+.category_button {
+    background: #6f6af0;
+    color: #000;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: var(--card-border-radius-2);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.category_button:hover{
+    /* color: var(--color-white); */
+    color: #000;
+}
+.post_thumbail {
+    border-radius: var(--card-border-radius-5);
+    border: 1rem solid var(--color-gray-900);
+    overflow: hidden;
+    margin-bottom: 1.6rem;
+}
+.post:hover .post_thumbail img {
+    filter: saturate(0);
+    transition: filter 500ms ease;
+}
+.post_author {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+.post_author-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--card-border-radius-3);
+    overflow: hidden;
+}
+
+.featured {
+    margin-top: 8rem;
+}
+
+.featured_container {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 0;
+}
+.featured .post_thumbail {
+    width: 500px;
+    height: fit-content;
+}
+.posts_container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+.singlepost {
+    margin: 6rem 0 2rem;
+}
+.singlepost_container {
+    width: var(--form-width);
+    background: var(--color-gray-900);
+    padding: 1rem 2rem 3rem;
+}
+.singlepost_thumbail {
+    margin: 1.5rem 0 1rem;
+}
+.singlepost_container p {
+    margin-top: 1rem;
+    line-height: 1.7;
+}
+.category_title {
+    height: 15rem;
+    margin-top: 4.5rem;
+    background: var(--color-gray-900);
+    display: grid;
+    place-items: center;
+}
+.form_section {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.form_section-container {
+    width: var(--form-width);
+}
+.alert_message {
+    padding: 0.8rem 1.4rem;
+    margin-bottom: 1rem;
+    border-radius:var(--card-border-radius-2) ;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.form_control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+input {
+    background: var(--color-gray-900);
+}
+.form_control.inline
+input, textarea, select {
+    padding: 0.8rem 1.4rem;
+    background-color: var(--color-gray-900);
+    border-radius: var(--card-border-radius-2);
+    resize: none;
+    color: var(--color-white);
+}
+.form_section small {
+    margin-top: 1rem;
+    display: block;
+}
+.form_section small a {
+    color: var(--color-primary);
+}
+.btn {
+    background: var(--color-primary);
+    color: var(--color-white);
+    width: 100px;
+    height: 30px;
+    border-radius: 0.5rem;
+}
